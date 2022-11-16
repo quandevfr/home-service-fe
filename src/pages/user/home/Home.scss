@@ -1,0 +1,39 @@
+.homePageContainer {
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-width: 320px;
+}
+
+.banner {
+  padding-top: calc(var(--header-height) + 2rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+}
+
+.bannerContent {
+  max-width: 500px;
+}
+
+.bannerTitle {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
+  margin-bottom: var(--mb-1-5);
+}
+
+.bannerTitle span {
+  color: var(--first-color);
+}
+
+.bannerDesc {
+  color: var(--text-color-light);
+  line-height: 1.5;
+  margin-bottom: var(--mb-2);
+}
+
+.aboutContainer {
+  padding-top: 250px;
+}

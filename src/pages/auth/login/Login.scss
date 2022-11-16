@@ -1,0 +1,102 @@
+#loginPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.loginTitle {
+  font-size: 2rem;
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-5);
+}
+
+.loginRole {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 50px;
+}
+
+.loginFormGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInputTxt {
+  border: 1px solid #d9d9d9;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--mb-0-5);
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+}
+
+.loginInputTxt:focus {
+  border: 1px solid var(--first-color);
+  box-shadow: 0 0 0 3.2px rgb(0 123 255 / 20%);
+}
+
+.loginInputTxtError:focus {
+  border: 1px solid var(--validation-color);
+  box-shadow: 0 0 0 3.2px rgb(230 57 70 / 20%);
+}
+
+.loginLabel {
+  display: inline-block;
+  margin-bottom: var(--mb-0-5);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+}
+
+.loginValidate {
+  font-size: var(--smaller-font-size);
+  color: var(--validation-color);
+}
+
+.loginFormGroup:first-child {
+  margin-bottom: var(--mb-1-5);
+}
+
+.loginForgot {
+  margin-top: var(--mb-1);
+  margin-bottom: var(--mb-2-5);
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.loginBtn input {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--first-color);
+  outline: none;
+  background-color: var(--first-color);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .loginContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .loginBanner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .loginContainer {
+    min-width: 320px;
+  }
+
+  .loginContent {
+    width: 100%;
+  }
+}

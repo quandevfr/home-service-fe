@@ -1,0 +1,177 @@
+.servicesPage {
+  padding: calc(var(--header-height) + 2rem) 0;
+}
+
+.servicesPageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.servicesPageFilter {
+  position: relative;
+}
+
+.servicesPageFilterSelect {
+  border: 1px solid var(--border-color);
+  border-radius: 0.4rem;
+  height: 40px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.servicesPageFilterTitle {
+  font-size: var(--normal-font-size);
+  margin-right: 1rem;
+}
+
+.servicesPageFilterIcon,
+.servicesPageFilterTitle {
+  color: var(--text-color-light);
+}
+
+.servicesPageFilterList {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.servicesPageFilterItem {
+  color: var(--text-color-light);
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  padding: 0 1rem;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.servicesPageFilterItem:hover {
+  background-color: var(--first-color-light);
+  color: var(--first-color);
+}
+
+.servicesPageContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.servicesCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  transition: all 0.1s ease;
+}
+
+.servicesCard:hover {
+  box-shadow: var(--normal-shadow);
+}
+
+.servicesCard:hover .servicesCardImg {
+  transform: scale(1.1);
+}
+
+.servicesCardImgWrap {
+  height: 250px;
+  border-radius: 0.4rem 0.4rem 0 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.servicesCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.servicesCardContentWrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.servicesCardTitle {
+  width: fit-content;
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.servicesCardDesc {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.servicesCardActions {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.servicesCardBtn {
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.servicesCardBtnAdd {
+  background-color: var(--first-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.servicesCardBtnAdd:hover {
+  background-color: var(--first-color-alt);
+}
+
+.servicesCardBtnChat {
+  background-color: var(--background-color);
+  border: 1px solid var(--background-color);
+  color: var(--disable-color);
+  transition: all 0.3s ease;
+}
+
+.servicesCardBtnChat:hover {
+  border: 1px solid var(--first-color);
+  color: var(--first-color);
+}
+
+.servicesCardChatIcon {
+  transition: all 0.3s ease;
+}
+
+.servicesCardBtnChat:hover .servicesCardChatIcon {
+  transform: scale(1.2);
+}

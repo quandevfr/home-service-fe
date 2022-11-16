@@ -1,0 +1,69 @@
+.customerTableItem {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr) 1fr 1fr;
+  column-gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+
+.ctiName {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ctiAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.ctiAvatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ctiLabel {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: -webkit-fill-available;
+}
+
+.ctiLabelName {
+  max-width: calc(100% - 48px);
+}
+
+.ctiActions {
+  position: relative;
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-color-light);
+  transition: all 0.3s ease;
+}
+
+.ctiActions:hover {
+  background-color: var(--background-color);
+}
+
+.ctiActions:hover .ctiActionIcon {
+  color: var(--first-color);
+}
+
+.ctiActionIcon {
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}

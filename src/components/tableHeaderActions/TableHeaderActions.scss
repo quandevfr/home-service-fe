@@ -1,0 +1,34 @@
+.tableHeaderActions {
+  background-color: white;
+  min-height: 55px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thaLeft,
+.thaRight {
+  display: flex;
+  align-items: center;
+}
+
+.thaAdd {
+  height: 40px;
+  padding: 0 1rem;
+  text-transform: capitalize;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  border-radius: var(--normal-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: white;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.thaFilter {
+  position: relative;
+}

@@ -1,0 +1,54 @@
+#statCard {
+  background-color: var(--body-color);
+  box-shadow: var(--normal-shadow);
+  padding: 1.5rem;
+  border-radius: var(--normal-radius);
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scStatValue {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scValue {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+}
+
+.scLabel {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.scIconWrap {
+  height: 46px;
+  width: 46px;
+
+  padding: 0.5rem;
+  border-radius: 50%;
+
+  color: var(--first-color);
+  background: var(--first-color-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scIcon {
+  width: 20px;
+  height: 20px;
+}

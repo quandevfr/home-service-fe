@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.menuList,
+.navActions {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  margin-right: 2rem;
+}
+
+.menuLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: var(--font-semi-bold);
+  transition: all 0.2s ease;
+}
+
+.menuLink:hover {
+  color: var(--first-color);
+}
+
+.menuLink.active {
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.logoContent {
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}

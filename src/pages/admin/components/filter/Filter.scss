@@ -1,0 +1,75 @@
+.filter {
+  position: relative;
+}
+
+.filterSelect {
+  width: 200px;
+  height: 40px;
+  border-radius: var(--normal-radius);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.filterSelected {
+  max-width: 160px;
+  outline: none;
+  border: none;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  height: 40px;
+  padding-left: 1rem;
+}
+
+.filterIcon {
+  display: flex;
+  align-items: center;
+}
+
+.filterDown,
+.filterClose {
+  font-size: 0.7rem;
+  width: 40px;
+  height: 40px;
+  color: var(--text-color-light);
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterDown:hover,
+.filterClose:hover {
+  color: var(--first-color);
+}
+
+.filterOptions {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--normal-radius);
+  padding: 0.3rem 0;
+  z-index: var(--z-tooltip);
+}
+
+.filterItem {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  text-transform: capitalize;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filterItem:hover {
+  color: var(--first-color);
+  background-color: var(--first-color-light);
+}

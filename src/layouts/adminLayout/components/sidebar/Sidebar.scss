@@ -1,0 +1,144 @@
+.sbContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  padding: 1rem;
+  -webkit-box-shadow: 3px 3px 10px 3px #ddd;
+  -moz-box-shadow: 3px 3px 10px 3px #ddd;
+  box-shadow: 3px 3px 10px 3px #ddd;
+}
+
+.sbLogo {
+  border-radius: 0.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.sbLogoName {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  color: var(--first-color);
+}
+
+.sbLogoDesc {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  text-transform: capitalize;
+}
+
+.sbMenuItemLink {
+  display: block;
+  height: 50px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.1s ease;
+}
+
+.sbMenuItemLink:hover {
+  background-color: #f8f8f8;
+}
+
+.sbMenuItemLink.active {
+  background-color: var(--first-color);
+}
+
+.sbMenuItemLink.active .sbMenuLinkItem {
+  color: white;
+}
+
+.sbMenuItemLink.active .sbMenuIcon {
+  color: white;
+}
+
+.sbMenuItem {
+  display: flex;
+  align-items: center;
+}
+
+.sbMenuIcon {
+  width: 22px;
+  height: 22px;
+  margin-right: 1rem;
+  color: var(--text-color);
+  transition: all 0.1s ease;
+}
+
+.sbMenuLinkItem {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: capitalize;
+  transition: all 0.1s ease;
+}
+
+.sbProfileContainer {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.sbProfile,
+.sbProfileWrap {
+  display: flex;
+  align-items: center;
+}
+
+.sbProfile {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sbProfileAvatar {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+}
+
+.sbProfileStatus {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: var(--online-color);
+  right: -5px;
+  bottom: -5px;
+  border: 3px solid white;
+}
+
+.sbProfileImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.sbProfileName {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: capitalize;
+}
+
+.sbProfileRole {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  text-transform: capitalize;
+}
+
+.sbLogoutIcon {
+  fill: var(--text-color-light);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.sbLogoutIcon:hover {
+  fill: var(--validation-color);
+}

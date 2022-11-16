@@ -1,0 +1,48 @@
+.beadCrumbsHeader,
+.beadCrumbsContent,
+.beadCrumbsContentItem {
+  display: flex;
+  align-items: center;
+}
+
+.beadCrumbsHeader {
+  margin-bottom: 1.5rem;
+}
+
+.beadCrumbsTitle {
+  position: relative;
+  display: inline-block;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-right: 2rem;
+}
+
+.beadCrumbsTitle::after {
+  content: '';
+  position: absolute;
+  right: -16px;
+  width: 1px;
+  height: 100%;
+  background-color: var(--border-color);
+}
+
+.beadCrumbsAdmin {
+  margin-right: 0.5rem;
+  color: var(--first-color);
+}
+
+.beadCrumbsIcon {
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+}
+
+.beadCrumbsName {
+  color: var(--text-color-light);
+  margin-left: 0.5rem;
+}
+
+.clTable {
+  box-shadow: var(--normal-shadow);
+  border-radius: var(--normal-radius);
+  overflow: hidden;
+}

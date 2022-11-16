@@ -1,0 +1,18 @@
+.employeeTableHeader {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr) 1fr 1fr;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.ethLabel {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+}
+
+.ethLabel:last-child {
+  text-align: center;
+}

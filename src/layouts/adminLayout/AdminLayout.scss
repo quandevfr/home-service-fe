@@ -1,0 +1,12 @@
+.adContainer {
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+.adMain {
+  position: relative;
+  left: 250px;
+  width: calc(100% - 250px);
+  padding: 1rem 2rem;
+  overflow-y: hidden;
+}

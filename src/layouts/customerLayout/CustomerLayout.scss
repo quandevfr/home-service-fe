@@ -1,0 +1,111 @@
+.customerMain {
+  min-height: 100vh;
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-width: 320px;
+}
+
+.scrollToTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.4rem;
+  border: 1px solid var(--first-color);
+  cursor: pointer;
+  z-index: var(--z-fixed);
+}
+
+.scrollToTopIcon {
+  color: var(--first-color);
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.scrollToTopIcon:hover {
+  transform: scale(1.2);
+}
+
+// Style Chat with admin
+.chatWithAdmin,
+.chatWithAdminDefault,
+.cart,
+.cartDefault {
+  position: fixed;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.4rem;
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: var(--z-fixed);
+  transition: all 0.3s ease;
+}
+
+.chatWithAdmin {
+  bottom: calc(2rem + 60px);
+}
+
+.chatWithAdminDefault {
+  bottom: 2rem;
+}
+
+.chatWithAdminIcon,
+.cartIcon {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.chatWithAdmin:hover,
+.chatWithAdminDefault:hover,
+.cart:hover,
+.cartDefault:hover {
+  background-color: var(--first-color-alt);
+}
+
+.chatWithAdmin:hover .chatWithAdminIcon,
+.chatWithAdminDefault:hover .chatWithAdminIcon,
+.cart:hover .cartIcon,
+.cartDefault:hover .cartIcon {
+  transform: scale(1.2);
+}
+
+.chatWithAdminNum,
+.cartNum {
+  position: absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  font-size: var(--smaller-font-size);
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid var(--first-color);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
+// Style cart
+.cart {
+  bottom: calc(2rem + 120px);
+}
+
+.cartDefault {
+  bottom: calc(2rem + 60px);
+}
+
+.cartIcon {
+  font-size: 0.875rem;
+}

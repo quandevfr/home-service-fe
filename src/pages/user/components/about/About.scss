@@ -1,0 +1,32 @@
+.aboutTitle {
+  text-transform: capitalize;
+  font-size: var(--h1-font-size);
+  text-align: center;
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
+  margin-bottom: var(--mb-1-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starIcon {
+  margin: 0 1.5rem;
+  width: 25px;
+  height: 25px;
+}
+
+.aboutDesc {
+  color: var(--text-color-light);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5rem;
+}

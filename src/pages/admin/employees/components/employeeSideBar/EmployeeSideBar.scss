@@ -1,0 +1,92 @@
+.employeeSideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  bottom: 0;
+  width: 350px;
+  background-color: white;
+  z-index: var(--z-fixed);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.showSideBar {
+  transform: translateX(0);
+}
+
+.sbUpload {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border: 1px dashed var(--border-color);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sbUploadImageWrap {
+  width: 100%;
+  height: 100%;
+}
+
+.overlayImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.sbAvatarBackground {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.sbAvatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.sbUploadImage {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sbUploadImageIcon {
+  font-size: 2rem;
+  color: var(--border-color);
+  margin-bottom: 0.5rem;
+}
+
+.sbUploadImageTitle {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.sbUploadImageSupports {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}

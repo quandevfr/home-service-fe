@@ -1,0 +1,23 @@
+#buttonComponent {
+  height: 40px;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--button-radius);
+  font-size: var(--small-font-size);
+  cursor: pointer;
+}
+
+.bcPrimary {
+  color: var(--body-color);
+  border-color: #7367f0 !important;
+  background-color: #7367f0 !important;
+}
+
+.bcPrimary:hover:not(.disabled):not(:disabled) {
+  box-shadow: 0 8px 25px -8px #7367f0;
+}
+
+.bcPrimary:hover {
+  background-color: #6258cc;
+  border-color: #5c52c0;
+}

@@ -1,0 +1,66 @@
+.aboutBanner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 200px;
+  align-items: center;
+  row-gap: 100px;
+}
+
+.aboutBannerImg {
+  position: relative;
+}
+
+.aboutBannerBlob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.aboutBannerImage {
+  max-width: 600px;
+}
+
+.aboutBannerTitle {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-1-5);
+}
+
+.aboutBannerTitle span {
+  color: var(--first-color);
+}
+
+.aboutBannerDesc {
+  color: var(--text-color-light);
+  line-height: 1.5;
+  max-width: 600px;
+  margin-bottom: var(--mb-2-5);
+}
+
+.aboutBannerReviewItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2);
+}
+
+.aboutBannerReviewItemImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.aboutBannerReviewItemImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutBannerReviewItemTitle {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+//
+.aboutBottomBoxImg {
+  position: relative;
+}
